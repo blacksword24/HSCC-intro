@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- Include statement has head section -->
+
+<%- include('./partials/head') -%>
+
+<body>
+<!-- Include navigation menu -->
+ <%- include('./partials/menu') -%>
+<h1> sample data entry </h1>
+<form name="SampleForm" action="/formentry method="POST">
+First name: <input type="text" name="firstname" id="firstname" required>
+Last name: <input type="text" name="lastname" id="lastname" required> <br>
+Email: <input type="email" name="email" id="email" required> <br>
+<input type="submit" value="Submit form">
+Enter a number: <input type="number" name="num1" required>
+Enter another number: <input type="number" name="num2" required>
+
+</form>
+</body>
+</html>

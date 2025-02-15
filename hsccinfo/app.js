@@ -1,3 +1,4 @@
+// 
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -9,6 +10,8 @@ var usersRouter = require('./routes/users');
 var bdpahistoryRouter = require('./routes/bdpahistory'); 
 var app = express();
 
+var formentryrouter = require('./routes/formentry')
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -19,7 +22,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+app.use('/formentry',formentryRouter);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/bdpahistory',bdpahistoryRouter);
