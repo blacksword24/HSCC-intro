@@ -24,7 +24,7 @@ if (process.env.CONSOLE_DEBUG=="true"){
 console.log(firstname);
 console.log(lastname);
 console.log(num1) // display num1
-console.log(Converter.ConvertDectoBin(num1)) // display binary conversion
+console.log(Converter.ConvertDecToBin(num1)) // display binary conversion
 } // End debugging code
 
 res.render('formresults', {
