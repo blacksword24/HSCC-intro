@@ -11,13 +11,14 @@
  <%- include('./partials/menu') -%>
 <h1> sample data entry </h1>
 <form name="SampleForm" action="/formentry method="POST">
-First name: <input type="text" name="firstname" id="firstname" required>
-Last name: <input type="text" name="lastname" id="lastname" required> <br>
-Email: <input type="email" name="email" id="email" required> <br>
+<label for="firstname"> First Name: </label> <input type="text"  name="first name" id="firstname" require>
+<label for="lastname"> Last Name: </label> <input type="text" name="lastname" id="lastname" require <br>
+<label  for="email"> Email: </label> <input type="email" name="email" id="email" require> <br>
 <input type="submit" value="Submit form">
-Enter a number: <input type="number" name="num1" required>
-Enter another number: <input type="number" name="num2" required>
+<label for="num1"> Enter a number: </label> <input type="number" name="num1" id="num1" require>
+<label for="num2"> Enter another number: </label> <input type="number" name="num2" id="num2" require>
 
+<input type="submit" value="Submit form"
 </form>
 </body>
 </html>
