@@ -10,7 +10,7 @@
 <!-- Include navigation menu -->
  <%- include('./partials/menu') -%>
 <h1> sample data entry </h1>
-<form name="SampleForm" action="/formentry method="POST">
+<form name="SampleForm" action="/formentry" method="POST">
 <label for="firstname"> First Name: </label> <input type="text"  name="first name" id="firstname" require>
 <label for="lastname"> Last Name: </label> <input type="text" name="lastname" id="lastname" require <br
 Email: <input type="email" name="email" id="email" required> <br>
@@ -18,7 +18,10 @@ Email: <input type="email" name="email" id="email" required> <br>
 Enter a number: <input type="number" name="num1" required>
 Enter another number: <input type="number" name="num2" required>
 
+<br> 
+<inpput type="checkbox" name="numconvert1" id="numconvert1" value="bin">
+<label for="numconvert1"> Show in binary </label>    
+<input type="checkbox" name="numconvert2" id="numconvert2" value="hex">
+<label for="numconvert1"> Show in hexadeximal </label>
 
-</form>
-</body>
-</html>
+<input type="submit" value="Submit form">
