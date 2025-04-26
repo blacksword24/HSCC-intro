@@ -5,7 +5,7 @@ const APIRequests=require("../middleware/APIRequests");
 // GET viewelection general page.
 router.get('/', function(req, res, next) {
 
-    const url = 'https://elections-cpl.api.hscc.bdpa.org/v1/elections&#39;
+    const url = 'https://elections-cpl.api.hscc.bdpa.org/v1/elections'
     const token = process.env.BEARER_TOKEN;
    
     // Pass url and token into RestAPIGet and pull information from response
@@ -36,7 +36,7 @@ router.get('/', function(req, res, next) {
 // GET viewelection route for a specific election given its id
 router.get('/:election_id', function(req, res, next) {
 
-    const url = 'https://elections-cpl.api.hscc.bdpa.org/v1/elections/&#39; + req.params.election_id
+    const url = 'https://elections-cpl.api.hscc.bdpa.org/v1/elections/' + req.params.election_id
     const token = process.env.BEARER_TOKEN;
    
     // Pass url and token into RestAPIGet and pull information from response
