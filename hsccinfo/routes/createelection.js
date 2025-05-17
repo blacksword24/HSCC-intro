@@ -22,9 +22,9 @@ router.post('/', function(req, res, next) {
 
     //Create Date objects for opening and closing time of elections
     //and convert to unix epoch milliseconds to post to API
-    openingdate = new Date(req.body.openingtime);
+    openingdate=new Date(req.body.openingtime);
     openingmilliseconds=openingdate.getTime();
-    closingdate = new Date(req.body.closingtime);
+    closingdate=new Date(req.body.closingtime);
     closingmilliseconds=closingdate.getTime();
 
     if (process.env.CONSOLE_DEBUG=="true"){
@@ -62,7 +62,7 @@ router.post('/', function(req, res, next) {
       opensAt:openingmilliseconds,
       closesAt:closingmilliseconds
     }
-    const url = 'https://elections-cpl.api.hscc.bdpa.org/v1/elections&#39;
+    const url = 'https://elections-cpl.api.hscc.bdpa.org/v1/elections'
     const token = process.env.BEARER_TOKEN;
 
     //Submit post request
